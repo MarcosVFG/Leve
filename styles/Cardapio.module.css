@@ -40,8 +40,12 @@
 
 .divbarrinha span:hover{
     background-color: #70B443;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 .divbarrinha h1:hover {
-    color: #00725d
+    color: #00725d;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
