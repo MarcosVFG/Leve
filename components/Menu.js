@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/future/image'
 import styles from '../styles/Home.module.css'
 import logo from '../public/melevefit.png'
@@ -14,11 +15,21 @@ const Menu = () => {return(
       </Head>
       <header className={styles.header}>
         <Image src={logo} className={styles.logo}/>
-        <a className={styles.letters} href='/'>Home</a>
-        <a className={styles.letters} href='/'>Cárdapio</a>
-        <a className={styles.letters} href='/'>Sobre Nós</a>
-        <a className={styles.letters} href='/'>Contato</a>
-        <a href='/'><Image src={cart} className={styles.cart}/></a>
+        <Link  href='/'>
+        <a className={styles.letters}>Home</a>
+        </Link>
+        <Link href='/'>
+        <a className={styles.letters}>Cárdapio</a>
+        </Link>
+        <Link href='/'>
+        <a className={styles.letters}>Sobre Nós</a>
+        </Link>
+        <Link href='/'>
+        <a className={styles.letters}>Contato</a>
+        </Link>
+        <Link href='/'>
+        <a><Image src={cart} className={styles.cart}/></a>
+        </Link>
       </header>
 
       <Image src={bcg} className={styles.bcg}/>
