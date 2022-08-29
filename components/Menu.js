@@ -23,7 +23,7 @@ const Menu = () => {return(
         <Link href='/'>
         <a className={styles.letters}>Sobre Nós</a>
         </Link>
-        <Link href='/'>
+        <Link href='/contato'>
         <a className={styles.letters}>Contato</a>
         </Link>
         <Link href='/'>
